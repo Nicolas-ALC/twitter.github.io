@@ -1,0 +1,32 @@
+
+
+.sidebar{
+    width: 160px;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(196, 195, 195);
+    overflow-x: hidden;
+    padding-top: 16px;
+    z-index: 1;
+
+}
+
+.sidebar a:hover{
+    background-color: mediumseagreen;
+}
+.sidebar a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+/* media queries (pour téléphone a petit écrant) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  
