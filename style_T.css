@@ -1,6 +1,7 @@
 
-
 .sidebar{
+    margin-left: 1em;
+    margin-top: 1em;
     width: 160px;
     height: 400px;
     position: fixed;
@@ -23,6 +24,9 @@
     color: black;
 }
 
+.material-icons{
+    size: 18px 14px ;
+}
 /* media queries (pour téléphone a petit écrant) */
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
