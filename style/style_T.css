@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+} 
+
+/* media queries (pour téléphone a petit écrant) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.sidebar{
+    width: 160px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 4.5em;
+    padding-left: 1em;
+    z-index: 1; /* top calque*/
+}
+.sidebar{
+    background-color: rgb(196, 195, 195);
+    opacity: 50%;
+}
+
+.sidebar ul{
+    list-style: none;
+   
+    
+}
+
+.sidebar a:hover{
+    background-color: mediumseagreen;
+}
+.sidebar a{
+    font-size: 17px;
+    line-height: 2em;
+    
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+body{
+    background-image: url(/image/bleutwitter.jpeg);
+    background-color: 0.01;
+}
+
+
