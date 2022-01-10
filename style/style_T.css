@@ -1,52 +1,110 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
-} 
-
-/* media queries (pour téléphone a petit écrant) */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-}
-
-.sidebar{
-    width: 160px;
+html,
+body {
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 4.5em;
-    padding-left: 1em;
-    z-index: 1; /* top calque*/
-}
-.sidebar{
-    background-color: rgb(196, 195, 195);
-    opacity: 50%;
+    margin: 0;
 }
 
-.sidebar ul{
-    list-style: none;
-   
-    
-}
-
-.sidebar a:hover{
-    background-color: mediumseagreen;
-}
-.sidebar a{
-    font-size: 17px;
-    line-height: 2em;
-    
-    text-decoration: none;
+body {
     display: block;
-    color: black;
-}
-body{
-    background-image: url(/image/bleutwitter.jpeg);
-    background-color: 0.01;
+    background-color: grey;
 }
 
 
+/* menu de navigation gauche */
+
+#left {
+    height: 100%;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar {
+    max-width: 275px;
+    flex: 1;
+    position: fixed;
+    /* placer les icons */
+}
+
+#left li {
+    list-style: none;
+}
+
+.newpost {
+    margin-right: 2em;
+    border-radius: 15px;
+    width: 130px;
+    height: 20px;
+    color: white;
+    background-color: skyblue;
+    border: none;
+}
+
+
+/* menu de droite */
+
+#right {
+    background-color: lightpink;
+    padding-left: 2em;
+}
+
+.menu_r {
+    /* display: flex;
+    placer les icons */
+    position: fixed;
+    max-width: 350px;
+}
+
+.search {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    border-radius: 15px;
+}
+
+
+/* millieu de la page */
+
+#center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: solid 1px black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
+}
+
+.trend {
+    background-color: darkgrey;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.follow {
+    background-color: darkgray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow,
+h3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_follow {
+    background-color: white;
+    border-radius: 15px;
+    width: 80px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
