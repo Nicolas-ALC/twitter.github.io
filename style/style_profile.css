@@ -1,0 +1,78 @@
+a {
+  text-decoration: none;
+}
+
+.cadre-central {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 70vh;
+  height: 160vh;
+  border: solid 1px;
+}
+
+.cadre-pseudo {
+  display: flex;
+  margin: 0px auto;
+  width: 70vh;
+  height: 30vh;
+  border: solid 1px;
+  position: relative;
+}
+.photo-profile {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transform: translateY(50%);
+  overflow: hidden;
+}
+
+.photo-profile img {
+  height: 100%;
+  width: 100%;
+}
+
+.grande {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pseudo {
+  padding-left: 20px;
+}
+
+#profile-buttons {
+  height: 90px;
+}
+
+.description {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.follow a {
+  color: #555;
+}
+
+.follow span {
+  color: black;
+}
+
+.follow a:hover {
+  text-decoration: underline;
+}
+
+.follow {
+  padding-left: 20px;
+  padding-bottom: 40px;
+}

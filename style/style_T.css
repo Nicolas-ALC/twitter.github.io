@@ -106,8 +106,7 @@ body {
     flex-direction: column;
 }
 
-.follow,
-h3 {
+.follow, h3 {
     display: flex;
     justify-content: space-around;
 }
