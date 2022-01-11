@@ -60,19 +60,19 @@ a {
   font-weight: bold;
 }
 
-.follow a {
+.follows a {
   color: #555;
 }
 
-.follow span {
+.follows span {
   color: black;
 }
 
-.follow a:hover {
+.follows a:hover {
   text-decoration: underline;
 }
 
-.follow {
+.follows {
   padding-left: 20px;
   padding-bottom: 40px;
 }

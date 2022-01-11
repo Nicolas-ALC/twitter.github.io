@@ -6,7 +6,12 @@ body {
 
 body {
     display: block;
-    background-color: grey;
+    background-color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
 }
 
 
@@ -19,6 +24,17 @@ body {
     justify-content: flex-end;
 }
 
+#left li {
+    list-style: none;
+}
+
+.sidebar {
+    max-width: 275px;
+    flex: 1;
+    position: fixed;
+    /* placer les icons */
+}
+
 .newpost {
     margin-right: 2em;
     border-radius: 15px;
@@ -26,6 +42,11 @@ body {
     height: 20px;
     color: white;
     border: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -39,34 +60,11 @@ body {
     /* display: flex;
     placer les icons */
     position: fixed;
-    top: 0;
-    left: 0;
     overflow-x: hidden;
-    padding-top: 4.5em;
     padding-left: 1em;
-    z-index: 1; /* top calque*/
-}
-
-.sidebar {
-    max-width: 275px;
-    flex: 1;
-    position: fixed;
-    /* placer les icons */
-}
-
-#left li {
-    list-style: none;
-}
-
-
-/* menu de droite */
-
-
-.menu_r {
-    /* display: flex;
-    placer les icons */
-    position: fixed;
+    z-index: 1; 
     max-width: 350px;
+    /* top calque*/
 }
 
 .search {
@@ -75,21 +73,6 @@ body {
     border-radius: 15px;
 }
 
-
-/* millieu de la page */
-
-#center {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: solid 1px black;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
-}
 
 .trend {
     background-color: darkgrey;
@@ -117,7 +100,3 @@ body {
     width: 80px;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-}
