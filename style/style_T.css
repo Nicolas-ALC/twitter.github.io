@@ -14,6 +14,43 @@
 .sidebar{
     width: 160px;
     height: 100%;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar {
+    max-width: 275px;
+    flex: 1;
+    position: fixed;
+    /* placer les icons */
+}
+
+#left li {
+    list-style: none;
+}
+
+.newpost {
+    margin-right: 2em;
+    border-radius: 15px;
+    width: 130px;
+    height: 20px;
+    color: white;
+    background-color: lightgreen;
+    border: none;
+}
+
+
+/* menu de droite */
+
+#right {
+    background-color: lightgreen;
+    padding-left: 2em;
+}
+
+.menu_r {
+    /* display: flex;
+    placer les icons */
     position: fixed;
     top: 0;
     left: 0;
