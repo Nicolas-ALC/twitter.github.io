@@ -6,7 +6,7 @@ a {
   display: flex;
   margin: 0px auto;
   width: 70vh;
-  height: 9vh;
+  height: 8vh;
   border: solid 0px;
   background-color: rgb(255, 255, 255);
 }
@@ -59,8 +59,7 @@ a {
 }
 
 .fleche:hover {
-  border-color: black;
-  background-color: rgb(85, 85, 85);
+  border-color: rgb(51, 50, 50);
 }
 
 .fleche img {
@@ -80,6 +79,10 @@ a {
 
 .pseudotop {
   padding-left: 20px;
+}
+
+.pseudotop h4 {
+  margin-bottom: 5px;
 }
 
 #profile-buttons {
