@@ -3,138 +3,48 @@ html,body {
     margin: 0;
 }
 
-
 body {
     display: block;
-  
-    
 }
-
-
 
 .follows>a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-
-
-#central {
-=======
-.cadre-top {
-  display: flex;
-  margin: 0px auto;
-  width: 70vh;
-  height: 9vh;
-  border: solid 0px;
-  background-color: rgb(255, 255, 255);
-}
-
-.cadre-central {
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
+#center {
   display: flex;
   height: 100%;
   flex-direction: column;
-<<<<<<< HEAD
   background-color: #fff;
   border: solid 1px black;
 }
-.cadre_profil{
-  height: 14%;
-  display: block;
-=======
-  margin: 0px auto;
-  width: 70vh;
-  height: 160vh;
-  border: solid 0px;
-  background-color: rgb(255, 255, 255);
-}
 
-.cadre-profil {
-  display: flex;
-  margin: 0px auto;
-  width: 70vh;
-  height: 30vh;
-  border: solid 0px;
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
+.cadre_profil{
+  height: 25%;
+  display: block;
   position: relative;
   
 }
-<<<<<<< HEAD
 .cadre_follow{
-  border: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
   display: block;
+  
   /* max-height: 355px;  */
-=======
-
-.photo-profile {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
-  border: 2px solid #555;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  transform: translateY(50%);
-  overflow: hidden;
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
 }
 
 .bannière{
   position: absolute;
   width: 100%;
-<<<<<<< HEAD
-=======
-}
-
-.fleche {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: solid 1px transparent;
-  margin-top: 20px;
-  margin-left: 10px;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-.fleche:hover {
-  border-color: black;
-  background-color: rgb(85, 85, 85);
-}
-
-.fleche img {
-  height: 100%;
-  width: 100%;
-}
-
-.grande {
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
   height: 100%;
   object-fit: cover;
   bottom: 0px;
-  
- 
- 
+  z-index: 0;
 }
 
-<<<<<<< HEAD
 .btn_edit{
   z-index: 6;
   border-radius: 15px;
-=======
-.pseudo {
-  padding-left: 20px;
-}
-
-.pseudotop {
-  padding-left: 20px;
-}
-
-#profile-buttons {
-  height: 90px;
-}
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
 
 }
 .cadre_topic{
@@ -142,17 +52,11 @@ body {
   /* min-height: 355px;  */
 }
 
-<<<<<<< HEAD
 #pseudo-1>h3{ 
 margin: 0em;
 margin-top: 1em;
 display: flex;
 flex-direction: column;
-=======
-.follows a {
-  color: #555;
-  margin-right: 15px;
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
 }
 #pseudo-1>p{
 margin:0;
@@ -164,6 +68,7 @@ margin:0;
   /* position: absolute; */
   max-width: 584px;
   width: 100%;
+  border-bottom: solid 1px black;
   
 }
 #pseudo-1:hover{
@@ -174,4 +79,15 @@ margin:0;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+}
+
+.pdp{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position:absolute;
+  border:solid 4px black ;
+  top: 70%;
+  left: 1em;
+
 }

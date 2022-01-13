@@ -13,7 +13,6 @@ body {
 }
 
 .grid {
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
     height: 100%;
@@ -26,19 +25,6 @@ body {
     justify-content: flex-end;
     z-index: 6;
     
-=======
-  display: grid;
-  grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
-}
-
-/* menu de navigation gauche */
-
-#left {
-  height: 100%;
-  background-color: lightgoldenrodyellow;
-  display: flex;
-  justify-content: flex-end;
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
 }
 
 #left li {
@@ -55,10 +41,7 @@ body {
     text-decoration: none;
 }
 
-/* #left a:hover{
-    background-color: lightgray;
-    border-radius: 15px;
-} */
+
 
 .sidebar {
   max-width: 275px;
@@ -68,21 +51,12 @@ body {
 }
 
 .newpost {
-<<<<<<< HEAD
     margin-right: 2em;
     border-radius: 15px;
     width: 130px;
     height: 20px;
     color: black;
     border: none;
-=======
-  margin-right: 2em;
-  border-radius: 15px;
-  width: 130px;
-  height: 20px;
-  color: white;
-  border: none;
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
 }
 
 .logo {
@@ -93,26 +67,17 @@ body {
 /* menu de droite */
 
 #right {
-<<<<<<< HEAD
     padding-left: 2em;
     z-index: 6;
-
-=======
-  padding-left: 2em;
->>>>>>> ba6afc65d38a9062ff8ad1a256aefacad6953f69
 }
 
 .menu_r {
-  /* display: flex;
-    placer les icons */
-
+    /*placer les icons */
   position: fixed;
-  top: 0;
-  left: 0;
   overflow-x: hidden;
   padding-top: 4.5em;
   padding-left: 1em;
-  z-index: 1; /* top calque*/
+  z-index: 1;
 }
 
 .sidebar {
@@ -131,9 +96,7 @@ body {
 .menu_r {
   /* display: flex;
     placer les icons */
-  position: fixed;
   max-width: 350px;
-
   position: fixed;
   overflow-x: hidden;
   padding-left: 1em;
@@ -150,13 +113,6 @@ body {
 
 /* millieu de la page */
 
-#center {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  border: solid 1px black;
-}
 
 .grid {
   display: grid;
