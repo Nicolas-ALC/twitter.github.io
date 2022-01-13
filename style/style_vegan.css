@@ -6,7 +6,6 @@ body {
 
 body {
     display: block;
-    background-color: grey;
 }
 
 
@@ -65,13 +64,13 @@ body {
 /* millieu de la page */
 
 
-#front {
+/* #right {
     z-index: 6;
     position: absolute;
     overflow-x: hidden;
     height: 100%;
     background-color: lightskyblue;
-}
+} */
 
 #center {
     height: 100%;

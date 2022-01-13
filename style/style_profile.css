@@ -1,118 +1,125 @@
-a {
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: block;
+}
+
+.follows > a {
   text-decoration: none;
 }
 
-.cadre-top {
+#center {
   display: flex;
-  margin: 0px auto;
-  width: 70vh;
-  height: 8vh;
-  border: solid 0px;
-  background-color: rgb(255, 255, 255);
+  height: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  border: solid 1px black;
 }
 
-.cadre-central {
+.cadre_profil {
+  height: 25%;
+  display: block;
+  position: relative;
+}
+.cadre_follow {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  display: block;
+
+  /* max-height: 355px;  */
+}
+
+.bannière {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  bottom: 0px;
+  z-index: 0;
+}
+
+.btn_edit {
+  z-index: 6;
+  border-radius: 15px;
+}
+.cadre_topic {
+  flex: 1;
+  /* min-height: 355px;  */
+}
+
+#pseudo-1 > h3 {
+  margin: 0em;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
-  margin: 0px auto;
-  width: 70vh;
-  height: 160vh;
-  border: solid 0px;
-  background-color: rgb(255, 255, 255);
+}
+#pseudo-1 > p {
+  margin: 0;
+}
+#pseudo-1 {
+  display: block;
+  padding-left: 1em;
+  /* position: absolute; */
+  max-width: 584px;
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+#pseudo-1:hover {
+  background-color: gray;
 }
 
-.cadre-profil {
+.retour {
+  width: 10%;
+  height: 10%;
+}
+
+.conteneur_info {
   display: flex;
-  margin: 0px auto;
-  width: 70vh;
-  height: 30vh;
-  border: solid 0px;
+  flex-direction: column;
+  justify-content: flex-end;
   position: relative;
 }
 
-.photo-profile {
-  height: 180px;
-  width: 180px;
+.pseudo-2 {
+  padding-top: 79px;
+}
+
+.pdp {
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  border: 2px solid #555;
   position: absolute;
-  bottom: 0;
-  left: 20px;
+  border: solid 1px black;
+  left: 1em;
+  bottom: 0px;
   transform: translateY(50%);
-  overflow: hidden;
 }
 
-.photo-profile img {
-  height: 100%;
-  width: 100%;
+.pseudo-2,
+h3 {
+  margin-bottom: 0;
 }
 
-.fleche {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  border: solid 1px transparent;
-  margin-top: 20px;
-  margin-left: 10px;
-  overflow: hidden;
-  background-color: transparent;
+.petit-pseudo {
+  margin-bottom: 20px;
 }
 
-.fleche:hover {
-  border-color: rgb(51, 50, 50);
-}
-
-.fleche img {
-  height: 100%;
-  width: 100%;
-}
-
-.grande {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.pseudo {
-  padding-left: 20px;
-}
-
-.pseudotop {
-  padding-left: 20px;
-}
-
-.pseudotop h4 {
-  margin-bottom: 5px;
-}
-
-#profile-buttons {
-  height: 90px;
-}
-
-.description {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
-.bold {
+.gras {
   font-weight: bold;
 }
 
-.follows a {
-  color: #555;
-  margin-right: 15px;
-}
-
-.follows span {
-  color: black;
-}
-
-.follows a:hover {
+.followers a:hover {
   text-decoration: underline;
 }
 
-.follows {
-  padding-left: 20px;
-  padding-bottom: 40px;
+.followers a {
+  color: rgb(78, 78, 78);
+}
+
+.followers span {
+  color: black;
 }
