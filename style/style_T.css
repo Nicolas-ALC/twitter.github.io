@@ -12,21 +12,36 @@ body {
 .grid {
     display: grid;
     grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
+    height: 100%;
 }
-
-
 /* menu de navigation gauche */
 
 #left {
     height: 100%;
-    background-color: lightgoldenrodyellow;
     display: flex;
     justify-content: flex-end;
+    z-index: 6;
+    
 }
 
 #left li {
     list-style: none;
 }
+
+#left li:hover{
+    width: 100px;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+#left a{
+    text-decoration: none;
+}
+
+/* #left a:hover{
+    background-color: lightgray;
+    border-radius: 15px;
+} */
 
 .sidebar {
     max-width: 275px;
@@ -40,7 +55,7 @@ body {
     border-radius: 15px;
     width: 130px;
     height: 20px;
-    color: white;
+    color: black;
     border: none;
 }
 
@@ -54,6 +69,8 @@ body {
 
 #right {
     padding-left: 2em;
+    z-index: 6;
+
 }
 
 .menu_r {

@@ -1,78 +1,87 @@
-a {
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    display: block;
+  
+    
+}
+
+
+
+.follows>a {
   text-decoration: none;
 }
 
-.cadre-central {
+
+
+#central {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  border: solid 1px black;
+}
+.cadre_profil{
+  height: 14%;
+  display: block;
+  position: relative;
+  
+}
+.cadre_follow{
+  border: solid 1px black;
+  display: block;
+  /* max-height: 355px;  */
+}
+
+.bannière{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  bottom: 0px;
+  
+ 
+ 
+}
+
+.btn_edit{
+  z-index: 6;
+  border-radius: 15px;
+
+}
+.cadre_topic{
+  flex:1;
+  /* min-height: 355px;  */
+}
+
+#pseudo-1>h3{ 
+margin: 0em;
+margin-top: 1em;
+display: flex;
+flex-direction: column;
+}
+#pseudo-1>p{
+margin:0;
+
+}
+#pseudo-1{
+  display: block;
+  padding-left: 1em;
+  /* position: absolute; */
+  max-width: 584px;
+  width: 100%;
+  
+}
+#pseudo-1:hover{
+  background-color: gray;
+}
+.conteneur_info{
   display: flex;
   flex-direction: column;
-  margin: 0px auto;
-  width: 70vh;
-  height: 160vh;
-  border: solid 1px;
-}
-
-.cadre-pseudo {
-  display: flex;
-  margin: 0px auto;
-  width: 70vh;
-  height: 30vh;
-  border: solid 1px;
+  justify-content: flex-end;
   position: relative;
-}
-.photo-profile {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
-  border: 2px solid #555;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  transform: translateY(50%);
-  overflow: hidden;
-}
-
-.photo-profile img {
-  height: 100%;
-  width: 100%;
-}
-
-.grande {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.pseudo {
-  padding-left: 20px;
-}
-
-#profile-buttons {
-  height: 90px;
-}
-
-.description {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.follows a {
-  color: #555;
-}
-
-.follows span {
-  color: black;
-}
-
-.follows a:hover {
-  text-decoration: underline;
-}
-
-.follows {
-  padding-left: 20px;
-  padding-bottom: 40px;
 }
