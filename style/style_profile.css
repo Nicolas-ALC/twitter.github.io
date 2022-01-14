@@ -51,16 +51,16 @@ body {
   /* min-height: 355px;  */
 }
 
-#pseudo-1 > h3 {
+.pseudo-1 > h3 {
   margin: 0em;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
 }
-#pseudo-1 > p {
+.pseudo-1 > p {
   margin: 0;
 }
-#pseudo-1 {
+.pseudo-1 {
   display: block;
   padding-left: 1em;
   /* position: absolute; */
@@ -68,13 +68,14 @@ body {
   width: 100%;
   border-bottom: solid 1px black;
 }
-#pseudo-1:hover {
+.pseudo-1:hover {
   background-color: gray;
 }
 
-.retour {
+.fleche {
   width: 10%;
   height: 10%;
+  border-radius: 50%;
 }
 
 .conteneur_info {
