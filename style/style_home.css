@@ -3,7 +3,94 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border: solid 1px black;
+    position: relative;
 }
 
-  
+.block_post{
+    display: block;
+    border-bottom: solid 1px;
+    padding: 1em;
+    /* margin-top: 60px; */
+
+}
+
+
+.icon_pdp{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border:solid 1px ;
+    /* position: absolute; */
+    bottom: 30%;
+    margin-right: 12px;
+}
+.head_bar{
+    cursor:pointer;
+    display: block;
+    position: sticky;
+    z-index: 6;
+    background-color: lightgray;
+    top: 0;
+    box-sizing: border-box;
+}
+
+/*More Tweet v0.1
+touver comment fixé le drop sur la page et réglé le décalage des drop */
+.band_tweet{
+    position:relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.band_tweet:hover{
+    background-color: lightslategray;
+    font-weight: 900;  /* bold on hover */
+}
+
+.band_tweet>h2{ 
+    color: blue;
+    margin: 0;
+    
+}
+.band_tweet:hover .drop{
+    display: block;
+   
+} 
+.drop{
+    display: none;
+    padding: 1em;
+    margin: 0;
+    position: absolute;
+    /* max-width: 600px; */
+    width: 1fr;
+    background-color: grey;
+    z-index: 1;
+   
+}
+.drop p{
+    border: solid 1px;
+    margin: 0;
+    margin-bottom: 1em;
+    /* border-bottom: solid 1px; */
+}
+
+.drop p:last-child{
+    margin-bottom: 0;
+}
+
+
+/* fin de more */
+.tweet_area{
+    border: none;
+    font-size: 20px;
+    display: flex;
+    padding: 0;
+    outline: 0; /* retire les bordures rouge lors de l'ecriture */
+}
+
+.vg{
+    border-top:solid 1px;
+}

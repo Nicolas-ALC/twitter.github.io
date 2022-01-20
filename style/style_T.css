@@ -14,9 +14,11 @@ body {
 
 .grid {
     display: grid;
+    position: relative;
     grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
     height: 100%;
 }
+  
 /* menu de navigation gauche */
 
 #left {
@@ -24,39 +26,45 @@ body {
     display: flex;
     justify-content: flex-end;
     z-index: 6;
-    
+    position: relative;
+    padding-right: 2em; 
+    border-right: solid 1px;
 }
 
 #left li {
-  list-style: none;
+    list-style: none;
 }
 
-#left li:hover{
+/* #left li:hover{
+    display: flex;
     width: 100px;
     background-color: lightgray;
     border-radius: 15px;
-}
+
+} */
 
 #left a{
     text-decoration: none;
 }
 
-
-
 .sidebar {
-  max-width: 275px;
-  flex: 1;
-  position: fixed;
+    text-align: start;
+    max-width: 275px;
+    flex: 1;
+    position: sticky;
+    height: 100%;
   /* placer les icons */
 }
 
 .newpost {
-    margin-right: 2em;
-    border-radius: 15px;
-    width: 130px;
-    height: 20px;
-    color: black;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: skyblue;
     border: none;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 .logo {
@@ -67,57 +75,28 @@ body {
 /* menu de droite */
 
 #right {
+    position: relative;
     padding-left: 2em;
     z-index: 6;
+    justify-content: left;
+    border-left:solid 1px ;
 }
 
 .menu_r {
     /*placer les icons */
   position: fixed;
   overflow-x: hidden;
-  padding-top: 4.5em;
-  padding-left: 1em;
-  z-index: 1;
-}
-
-.sidebar {
-  max-width: 275px;
-  flex: 1;
-  position: fixed;
-  /* placer les icons */
-}
-
-#left li {
-  list-style: none;
-}
-
-/* menu de droite */
-
-.menu_r {
-  /* display: flex;
-    placer les icons */
+  padding-top: 1em;
+  z-index: 3;
   max-width: 350px;
-  position: fixed;
-  overflow-x: hidden;
-  padding-left: 1em;
-  z-index: 1;
-  max-width: 350px;
-  /* top calque*/
+
 }
 
 .search {
-  margin-bottom: 1em;
-  margin-left: 2em;
-  border-radius: 15px;
+  border-radius: 25px;
+  height: 50px;
 }
 
-/* millieu de la page */
-
-
-.grid {
-  display: grid;
-  grid-template-columns: minmax(68px, 1fr) minmax(0, 600px) minmax(290px, 1fr);
-}
 
 .trend {
   background-color: darkgrey;
@@ -132,6 +111,7 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  width: 1fr;
 }
 
 .follow h3 {
@@ -143,9 +123,43 @@ body {
   background-color: white;
   border-radius: 15px;
   width: 80px;
+  position: absolute;
+  right: 0%;
+  margin-right: 1em;
 }
 
 .logo {
   width: 50px;
   height: 50px;
 }
+
+.min_profile{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+}
+.min_profile:hover{
+ border-radius: 25px;
+ background-color: lightgray;
+
+}
+
+
+.icon{
+  width:50px; 
+  height:50px;
+  border: solid 1px;
+  border-radius: 50%;
+}
+
+footer{
+  bottom: 0;
+
+}
+
+#footer{
+  bottom: 0;
+}
+
+
